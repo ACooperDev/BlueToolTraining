@@ -4,7 +4,7 @@ using System.Linq;
 using ViDi2.Training.Local;
 //Must be run on an x64 platform.
 //Add NuGet packages from: C:\ProgramData\Cognex\VisionPro Deep Learning\3.3\Examples\packages
-    //ViDi.NET
+    //ViDi.NET 
     //ViDi.NET.VisionPro
 namespace BlueToolTraining
 {
