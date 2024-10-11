@@ -53,7 +53,9 @@ namespace BlueToolTraining
 
                     //Process all images in the Blue Tool's database
                     myBlueTool.Database.Process();
-                    myBlueTool.Wait(); // Wait until the processing is done
+
+                    //Wait until the processing is done
+                    myBlueTool.Wait(); 
 
                     //Map of feature positions for specific image files
                     Dictionary<string, ViDi2.Point> featurePositions = new Dictionary<string, ViDi2.Point>
@@ -94,7 +96,7 @@ namespace BlueToolTraining
                     myBlueTool.Parameters.Flip = ViDi2.FlippingMode.Both;
                     myBlueTool.Parameters.Luminance = 0.05;
                     myBlueTool.Parameters.Contrast = 0.05;
-                    myBlueTool.Parameters.CountEpochs = 10;  // Set training epochs
+                    myBlueTool.Parameters.CountEpochs = 10;
 
                     //Mark the dataset as ready for training
                     myBlueTool.Database.SetTrainFlag("", true);
